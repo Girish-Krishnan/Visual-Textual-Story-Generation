@@ -5,7 +5,7 @@
 ![Model Architecture](assets/architecture.png)
 
 > *Generate a short illustrated story from a single-line prompt in one shot.*
-> This repository contains a **research‑grade prototype** that marries a GPT‑style language model with a Stable‑Diffusion image pipeline via a discrete **storyboard bottleneck**.
+> This repository contains a **research‑grade prototype** that combines a GPT‑style language model with a Stable‑Diffusion image pipeline via a discrete **storyboard bottleneck**.
 
 ---
 
@@ -24,12 +24,10 @@ The system is factorised into four learned components (see figure above):
 
 For each data triple $(s,x)$ (paragraph & image) we minimise the negative Evidence Lower Bound
 
-$$
-\mathcal{L} = \underbrace{\mathbb{E}_{q_\phi}[ -\log p_\psi(s\mid \mathbf{z}) ]}_{\text{NLL}_\text{text}}
+$$\mathcal{L} = \underbrace{\mathbb{E}_{q_\phi}[ -\log p_\psi(s\mid \mathbf{z}) ]}_{\text{NLL}_\text{text}}
 \; + \; \beta_\mathrm{KL}\,\underbrace{\mathbb{E}_{q_\phi}[ -\log p_\theta(\mathbf{z}) ]}_{\text{latent NLL}}
 \; + \; \underbrace{\mathcal{L}_\mathrm{VQ}}_{\text{commit.}}
-\; + \; \underbrace{\lambda\, \mathbb{E}[\|\epsilon\_\omega(\mathbf{z}_t)-\epsilon\|^2]}_{\text{diffusion NLL}}
-$$
+\; + \; \underbrace{\lambda\, \mathbb{E}[\|\epsilon\_\omega(\mathbf{z}_t)-\epsilon\|^2]}_{\text{diffusion NLL}}$$
 
 where $\mathcal{L}_\mathrm{VQ}$ is the EMA Vector‑Quantiser loss and the last term is the Monte‑Carlo $\epsilon$-prediction MSE of the frozen **Stable‑Diffusion** UNet.
 

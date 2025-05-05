@@ -35,9 +35,13 @@ where $\mathcal{L}_\mathrm{VQ}$ is the EMA Vector‑Quantiser loss and the last 
 
 ### 1.2  Vector‑Quantised Storyboard
 
-Story tokens $s\in\mathbb{N}^{L}$ are embedded and encoded by a 6‑layer Transformer encoder
-$z_e = f_\text{enc}(\text{Embed}(s))\in\mathbb{R}^{L\times D}$whose output is quantised
-$\mathbf{z}=\text{VQ}(z_e) \in \{1,\dots,K\}^{L}$with EMA updates as in $\small\text{van den Oord et al., 2017}.$
+Story tokens $s\in\mathbb{N}^{L}$ are embedded and encoded by a 6‑layer Transformer encoder given by
+
+```math
+z_e = f_\text{enc}(\text{Embed}(s))\in\mathbb{R}^{L\times D}
+```
+
+whose output is quantised $\mathbf{z}=\text{VQ}(z_e) \in \{1,\dots,K\}^{L}$ with EMA updates as in $\small\text{van den Oord et al., 2017}.$
 
 Afterwards the length is pooled to a fixed $\ell=8$ by majority‑vote over equal chunks:
 $\tilde{\mathbf z}[j]=\text{mode}\big(\mathbf{z}[\,j\cdot k:(j+1)k)\big).$

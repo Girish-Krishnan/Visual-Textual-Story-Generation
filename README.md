@@ -91,6 +91,8 @@ python story_generative_model.py generate \
 
 The script prints the generated story and saves `generated.png`.
 
+### Example 1
+
 **Example Input:** *We build a Disney Park on the Moon*.
 
 **Example Output:** We build a Disney park on the moon. It's a space amusement ride in which people ride around a giant white structure on a cable‑tray (or you can just imagine it as a floating track). You might get an astronaut who gets stuck on a small planet; then one day you'll get a spaceman who finds himself trapped in a giant ball—the moon! The ball's walls will rotate, the ball's color will change, and you'll find yourself floating up on the ball. Sounds like fun! And no more worries about running out of oxygen, or getting stranded in a wormhole, or what to wear in space! We use a lot of real equipment from outer space!
@@ -103,6 +105,28 @@ In this scenario, we would travel through the atmosphere at 40,000 mph, travelin
 Or perhaps you'd like to fly to the moon. The rocket would be like the one pictured, except this time, the booster had to go into the lunar gravity well (think about the fact that if the Moon is spinning so fast that you're stuck on its surface, the whole spacecraft would get torn apart by the centrifugal forces). This rocket could make it there—a far-off goal even by today's technology.
 
 **Generated Image:** ![Generated Image](assets/generated.png)
+
+### Example 2
+
+**Example Input:** *Once upon a time in a tropical rain forest*.
+
+**Example Output:** Once upon a time in a tropical rain forest was a tiny little creature with a big heart.
+
+She had no arms and her mouth was too small to say anything. Her eyes were too wide open and they seemed to contain all of her world at once, but it was one of her favorite parts of that day. She knew she was small, but she still felt mighty when she looked at the trees, the animals, the people, all of the living creatures who took care of her. She smiled all day and every day, too, knowing her friends all knew what she meant to them.
+
+Because of them, she liked to walk alone. There was something about the sounds of the jungle that always made her feel safe and in control. She had a favorite little waterfall near an old hut at the edge of the jungle she loved. At night, when it was raining, she could listen to all the little sounds below through her favorite pair of rain slits, listening for the echoes of frogs and the squeak of leaves from each other.
+
+A short time after she was born she was able to walk just a little, to squeeze herself into things on her own. She felt happy and secure being as small as she was. But as she grew more comfortable, little things got more and more challenging. For example…
+
+Soon the trees were her only friends. She wanted to run away, to be free. But the rain always brought her down, the wind, the bugs. The trees kept her safe while she struggled alone, but they couldn't take her away.
+
+Finally she learned to talk.
+
+The little creature spoke like everyone else—tongues stuck out of her mouth and arms were curled at her side because she felt like a tree! It spoke in a sound like a human but she said it like her. It told her a story about how she helped each other, how a beautiful flower grew and how everything in the world was a gift from a person.
+
+Her friends laughed so hard and she cried so sweetly. They held her, held her until her body relaxed and her lungs stopped struggling, then they put her back under the rain slits. The rain would be there and she would still feel the sounds of the raindrops hitting her, just as she did before.
+
+**Generated Image:** ![Generated Image](assets/generated_2.png)
 
 ---
 
